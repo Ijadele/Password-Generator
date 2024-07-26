@@ -1,0 +1,114 @@
+/* styles.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Karla", sans-serif;
+    background-color: #111827;
+    width: 100%;
+    letter-spacing: -2.5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section {
+    width: 80%;
+    margin: 7rem 0;
+    text-align: left;
+}
+
+h1 {
+    font-size: 40px;
+    color: white;
+    font-weight: 800;
+}
+
+span {
+    color: #10B981;
+    display: block;
+}
+
+p {
+    color: #D5D4D8;
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 20px 0;
+}
+
+label {
+    color: #D5D4D8;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+}
+
+input[type="number"] {
+    width: 60px;
+    padding: 5px;
+    font-size: 16px;
+    margin: 10px 0 20px;
+    border: 1px solid #2F3E53;
+    border-radius: 4px;
+    background-color: #273549;
+    color: #D5D4D8;
+}
+
+.checkbox-container {
+    margin: 20px 0;
+}
+
+button {
+    padding: 10px;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    width: 211px;
+    height: 39px;
+    background-color: #273549;
+    color: #10B981;
+    cursor: pointer;
+}
+
+#generate {
+    background-color: #10B981;
+    color: #fff;
+}
+
+.inputAnswer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 30px 0;
+}
+
+input[type="text"] {
+    border-bottom: 1px solid #2F3E53;
+    width: 446px;
+    padding: 5px;
+    font-size: 16px;
+    margin-right: 10px;
+    background-color: transparent;
+    color: #10B981;
+}
+
+.copyBtn {
+    color: #10B981;
+    border: none;
+    background-color: #273549;
+    border-radius: 6px;
+    cursor: pointer;
+    padding: 10px 20px;
+}

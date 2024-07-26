@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <title>Password Generator</title>
+</head>
+<body>
+    <main>
+        <section>
+            <h1>Generate a <span>random password</span></h1>
+            <p>Never use an insecure password again.</p>
+            
+            <label for="passwordLength">Password Length:</label>
+            <input type="number" id="passwordLength" value="15" min="1" max="50">
+            
+            <div class="checkbox-container">
+                <label for="includeSymbols">
+                    <input type="checkbox" id="includeSymbols" checked>
+                    Include Symbols
+                </label>
+                <label for="includeNumbers">
+                    <input type="checkbox" id="includeNumbers" checked>
+                    Include Numbers
+                </label>
+            </div>
+
+            <button id="generate">Generate Passwords</button>
+
+            <div class="inputAnswer">
+                <input type="text" class="randomIndexOne" readonly>
+                <button class="copyBtn" onclick="copyToClipboard('.randomIndexOne')">Copy</button>
+            </div>
+
+            <div class="inputAnswer">
+                <input type="text" class="randomIndexTwo" readonly>
+                <button class="copyBtn" onclick="copyToClipboard('.randomIndexTwo')">Copy</button>
+            </div>
+        </section>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html> 
